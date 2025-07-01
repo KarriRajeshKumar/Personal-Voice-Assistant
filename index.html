@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajesh Voice Assistant 🤖</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://img.freepik.com/premium-vector/golden-elegant-logo-letter-r_634477-413.jpg?w=740" alt="Rajesh" class="avatar">
+            <h1>Rajesh</h1>
+            <p>Your personal voice assistant 🤖</p>
+            <ul class="features">
+                <li>Play YouTube songs</li>
+                <li>Tell jokes</li>
+                <li>Wikipedia answers</li>
+                <li>Time queries</li>
+                <li>Web navigation</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/KarriRajeshKumar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/karri-rajeshkumar-5200b7279" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:karrirajeshkumar3@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Rajesh Voice Assistant</h1>
+                <p>Talk to Rajesh using text or your microphone!</p>
+            </div>
+            <div class="chat-container" id="chatContainer">
+                <div class="message assistant">
+                    <div class="message-bubble">
+                        🤖 Yo! I'm Rajesh – your personal voice assistant 💡
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" class="text-input" id="textInput" placeholder="Say something to Rajesh..." onkeypress="handleKeyPress(event)">
+                <button class="speak-btn" id="speakBtn" onclick="toggleListening()" title="Click to speak">
+                    <i class="fas fa-microphone"></i>
+                </button>
+            </div>
+            <div id="status" class="status" style="display: none;"></div>
+        </div>
+    </div>
+    <!-- Listening Indicator -->
+    <div class="listening-indicator" id="listeningIndicator">
+        🎤 Listening...<br>
+        <small>Speak clearly into your microphone</small>
+    </div>
+    <!-- Help Bar -->
+    <div class="help-bar">
+        <h3>💡 Example Commands</h3>
+        <ul>
+            <li>Play Despacito</li>
+            <li>What time is it?</li>
+            <li>Tell me a joke</li>
+            <li>Who is Albert Einstein?</li>
+            <li>Open Gmail</li>
+            <li>Open GitHub</li>
+            <li>Open LinkedIn</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
